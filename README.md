@@ -1,5 +1,14 @@
 # aboutMe
 <!DOCTYPE html>
 <html>
-<p>test</p>
+  <head>
+    <style>
+      .title {
+      background-color
+      }
+    </style>
+    <div class = "title">
+      <h1>ABOUT ME - Khanlen Ouimette</h1>
+    </div>
+  </head>
 </html>
