@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .body {
+        background-color: rgb(69 78 8);
+      }
 
+      .navBar {
+        width: 100vw;
+        height: 64px;
+        background: linear-gradient(45deg, #23a6d5, #23d5ab, #e100ff, #ff0000);
+        background-size: 400% 400%;
+        animation: gradient 20s ease infinite;
+        padding: 0px;
+      }
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .navBarLogo {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    </style>
+    <nav class="navBar">
+      <img
+        class="navBarLogo"
+        src="images/mainLogoALT.png"
+        alt="Logo Could Not be Rendered"
+      />
+    </nav>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>
