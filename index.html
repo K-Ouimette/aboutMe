@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="Somatic-Rounded.otf">
     <style>
-      .body {
-        background-color: rgb(69 78 8);
-      }
-
       .navBar {
         width: 100vw;
         height: 64px;
@@ -13,6 +10,7 @@
         background-size: 400% 400%;
         animation: gradient 20s ease infinite;
         padding: 0px;
+        position: fixed;
       }
       @keyframes gradient {
         0% {
@@ -32,13 +30,26 @@
         border-radius: 50%;
         object-fit: cover;
       }
+
+      .navBarItem {
+        width:64px;
+        height: 64px;
+      }
     </style>
     <nav class="navBar">
-      <img
+      <a href="index.html"><img
         class="navBarLogo"
-        src="images/mainLogoALT.png"
+        src="files/mainLogoALT.png"
         alt="Logo Could Not be Rendered"
-      />
+      /></a>
+
+      <ul class="navBarNav">
+        <li class="navBarItem">
+          <a href="projects.html">My Projects/a>
+          <a href="contactInfo.html">Contact Me</a>
+          <a href="demo.html">Demos</a>
+        </li>
+      </ul>
     </nav>
   </head>
   <body>
