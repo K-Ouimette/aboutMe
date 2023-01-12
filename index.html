@@ -1,58 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="Somatic-Rounded.otf">
-    <style>
-      .navBar {
-        width: 100vw;
-        height: 64px;
-        background: linear-gradient(45deg, #23a6d5, #23d5ab, #e100ff, #ff0000);
-        background-size: 400% 400%;
-        animation: gradient 20s ease infinite;
-        padding: 0px;
-        position: fixed;
-      }
-      @keyframes gradient {
-        0% {
-          background-position: 0% 50%;
-        }
-        50% {
-          background-position: 100% 50%;
-        }
-        100% {
-          background-position: 0% 50%;
-        }
-      }
-
-      .navBarLogo {
-        width: 64px;
-        height: 64px;
-        border-radius: 50%;
-        object-fit: cover;
-      }
-
-      .navBarItem {
-        width:64px;
-        height: 64px;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body class="dark">
     <nav class="navBar">
-      <a href="index.html"><img
-        class="navBarLogo"
-        src="files/mainLogoALT.png"
-        alt="Logo Could Not be Rendered"
+      <a href="index.html"
+        ><img
+          class="navBarLogo"
+          src="files/mainLogoALT.png"
+          alt="Logo Could Not be Rendered"
       /></a>
-
       <ul class="navBarNav">
         <li class="navBarItem">
-          <a href="projects.html">My Projects/a>
-          <a href="contactInfo.html">Contact Me</a>
+          <a href="projects.html">My Projects</a>
           <a href="demo.html">Demos</a>
+          <a href="contactInfo.html">Contact Me</a>
         </li>
       </ul>
     </nav>
-  </head>
-  <body>
-    <div></div>
+    <header>
+      <img src="mainLogo.png" class="logo" />
+      <h1>Fullstack Development & Machine Learning</h1>
+      <h3>HTML, CSS, JavaScript, Python, Node.js, MongoDB</h3>
+      <p>TEXT</p>
+    </header>
   </body>
 </html>
