@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'somaticrounded';
+  src: url('files/font/somatic-rounded-webfont.woff2') format('woff2'),
+       url('files/font/somatic-rounded-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  font-size: 16px; 
+  font-family: somaticrounded;
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
+
+}
+
 .navBar {
     width: 100vw;
     height: 64px;
@@ -37,12 +55,6 @@
     width: 64px;
     height: 64px;
   }
-
-  .body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Monterrat', sans-serif;
-  }
   
   .ul {
     list-style-type: none;
@@ -50,7 +62,13 @@
     padding: 0;
   }
 
-  .a {
-    color: currentColor;
-    text-decoration: none;
+  .body {
+    color: whitesmoke;
+    background-color: #23232e;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main {
+    padding: 1rem;
   }
