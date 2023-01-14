@@ -1,7 +1,69 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="style.css">
+    <style>
+      @font-face {
+  font-family: 'somaticrounded';
+  src: url('files/font/somatic-rounded-webfont.woff2') format('woff2'),
+       url('files/font/somatic-rounded-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  font-size: 16px; 
+  font-family: somaticrounded;
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
+
+}
+
+.navBar {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 999;
+    width: 100vw;
+    height: 64px;
+    background: linear-gradient(45deg, #23a6d5, #23d5ab, #e100ff, #ff0000);
+    background-size: 400% 400%;
+    animation: gradient 20s ease infinite;
+    padding: 0px;
+    margin-top: 0px;
+    position: fixed;
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.navBarLogo {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+body {
+    color: whitesmoke;
+    background-color: #23232e;
+    margin: 0;
+    padding: 0;
+  }
+
+main {
+    padding: 1rem;
+  }
+    </style>
     <script defer src="app.js"></script>
   </head>
   <body>
@@ -12,12 +74,10 @@
           src="files/mainLogoALT.png"
           alt="Logo Could Not be Rendered"
       /></a>
-      <div class="navbar-links">
-          <a href="projects.html">My Projects</a>
-          <a href="demo.html">Demos</a>
-          <a href="contactInfo.html">Contact Me</a>
-      </div>
-</nav>
+            <a href="projects.html">My Projects</a>
+            <a href="demo.html">Demos</a>
+            <a href="contactInfo.html">Contact Me</a>
+    </nav>    
     <header>
     </header>
     <section>
